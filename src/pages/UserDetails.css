@@ -1,0 +1,54 @@
+.user-details-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .user-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .user-info {
+    flex-grow: 1;
+  }
+  
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: darkred;
+  }
+  
+  .back-btn {
+    margin-bottom: 15px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .back-btn:hover {
+    background-color: #0056b3;
+  }
+  

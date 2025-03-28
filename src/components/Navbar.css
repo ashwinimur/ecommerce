@@ -1,0 +1,189 @@
+/* Navbar.css
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #007bff;
+    padding: 15px 30px;
+    color: white;
+  }
+  
+  .navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+   */
+
+
+   /* Navbar Container */
+.navbar {
+  background-color: #007bff; /* Blue color */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Left Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1; /* Allows left items to push right items away */
+}
+
+/* Left Section */
+.right-nav {
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Keep items aligned properly */
+  flex-grow: 0; /* Prevent shifting */
+}
+
+
+/* Right Section */
+.right-nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Nav Link Styling */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Dropdown */
+/* Ensure dropdown shows when hovering */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown span {
+  cursor: pointer;
+}
+
+/* Display dropdown menu when parent is hovered */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Make sure the dropdown menu is positioned correctly */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  color: black;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px;
+  min-width: 150px;
+  border-radius: 5px;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.dropdown-menu li {
+  padding: 8px 12px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.dropdown-menu a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Login & Logout Buttons */
+.icon {
+  margin-right: 5px;
+}
+
+.logout-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  /* cursor: pointer; */
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}
